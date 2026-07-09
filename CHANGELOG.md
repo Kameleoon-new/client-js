@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.24.4 (2026-07-09)
+
+### Patch Changes
+
+- Increased the visitor activity tracking interval from **15** to **60** seconds, reducing the number of activity tracking requests sent for engaged visitors.
+
 ## 4.24.3 (2026-07-08)
 
 ### Patch Changes
