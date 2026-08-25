@@ -1,5 +1,25 @@
 # Change Log
 
+## 4.24.5 (2026-07-10)
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.25.2
+
+## 4.24.4 (2026-07-09)
+
+### Patch Changes
+
+- Increased the visitor activity tracking interval from **15** to **60** seconds, reducing the number of activity tracking requests sent for engaged visitors.
+
+## 4.24.3 (2026-07-08)
+
+### Patch Changes
+
+- Tracking requests are now performed only when the visitor genuinely interacted with the page (`mousemove`/`scroll`) since the last tick, so hidden/backgrounded tabs no longer inflate visits. This helps reduce the number of requests sent to Kameleoon servers and prevents inflated visit counts. To continue sending data while the page isn't active, explicitly call [`flush({instant: true})`][flush].
+- Prevented duplicate activity tracking when the [Kameleoon Engine (Engine.js)](https://docs.kameleoon.com/developer-docs/web-experimentation/get-started/engine-execution-flow#experimentation-engine-overview) is present on the page (`window.Kameleoon`).
+
 ## 4.24.2 (2026-05-20)
 
 > [!WARNING]
@@ -279,7 +299,6 @@
 ### Patch Changes
 
 - Fixed an issue where using [`getRemoteVisitorData`][getRemoteVisitorData] with `personalization=true` or [`evaluateAudiences`][evaluateAudiences] could cause a visitor’s targeting data to be unexpectedly removed from storage.
-- Fixed an issue where the SDK could incorrectly evaluate the **Kameleoon Segment** targeting condition as `false`.
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.14.4
 
