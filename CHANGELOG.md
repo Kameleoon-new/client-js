@@ -2,12 +2,18 @@
 
 ## 4.24.2 (2026-05-20)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.25.1
 
 ## 4.24.1 (2026-05-14)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
@@ -16,7 +22,7 @@
 ## 4.24.0 (2026-05-13)
 
 > [!WARNING]
-> If you're upgrading from a version earlier than 4.24.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
