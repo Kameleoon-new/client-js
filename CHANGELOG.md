@@ -1,6 +1,9 @@
 # Change Log
 
-## 4.25.0 (2026-08-24)
+## 4.25.0 (2026-08-28)
+
+> [!CAUTION]
+> **Final notice:** according to our [EOL policy](https://www.kameleoon.com/eol-policy), versions earlier than **4.14.0** reached end-of-life more than a year ago. Upgrading from a version earlier than **4.14.0** may require additional migration steps — if you run into unexpected build or SDK-related issues, please contact the Kameleoon Support Team. We're here to make your transition smooth.
 
 ### Features
 
@@ -24,6 +27,9 @@
 
 ## 4.24.5 (2026-07-10)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Updated dependencies
@@ -31,11 +37,17 @@
 
 ## 4.24.4 (2026-07-09)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Increased the visitor activity tracking interval from **15** to **60** seconds, reducing the number of activity tracking requests sent for engaged visitors.
 
 ## 4.24.3 (2026-07-08)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
@@ -44,12 +56,18 @@
 
 ## 4.24.2 (2026-05-20)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.25.1
 
 ## 4.24.1 (2026-05-14)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
@@ -58,7 +76,7 @@
 ## 4.24.0 (2026-05-13)
 
 > [!WARNING]
-> If you're upgrading from a version earlier than 4.24.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+> If you're upgrading from a version earlier than 4.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
