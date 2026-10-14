@@ -1,5 +1,26 @@
 # Change Log
 
+## 4.27.0 (2026-10-14)
+
+### Features
+
+- Faster configuration updates in browsers: the SDK no longer triggers CORS preflight (`OPTIONS`) requests, so a configuration update takes one request instead of two.
+- Real-time configuration updates (streaming) can now be enabled for server-side SDKs only. In that case, this SDK keeps polling.
+
+### Patch Changes
+
+- Real-time updates now recover from streaming outages: when the streaming connection is unavailable or a configuration update fails, the SDK falls back to polling and switches back to streaming once it is available again. Updates published while the connection was down are no longer missed.
+- [`requestTimeout`][configurationParameters] now also covers downloading the response, so a stalled response can no longer block the SDK.
+- [`getRemoteData`][getRemoteData] and [`getRemoteVisitorData`][getRemoteVisitorData] now return the error message sent by the server.
+- A custom event source without `onError` no longer stops configuration updates silently: the SDK keeps polling next to streaming. Implementing `onError` will become required in the next major version.
+- Routine reconnections of the streaming connection are now logged as `INFO` instead of `ERROR`.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.28.0
+
+[configurationParameters]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk/#configuration-parameters
+[getRemoteData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk#getremotedata
+[getRemoteVisitorData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk#getremotevisitordata
+
 ## 4.26.0 (2026-09-15)
 
 ### Features
